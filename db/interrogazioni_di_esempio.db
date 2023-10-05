@@ -1,0 +1,2 @@
+// per ottenere il docente di un corso
+match (c:Corso {nome: 'reti'})-[:HA_DOCENTE]->(d:Docente) return d;

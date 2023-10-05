@@ -1,0 +1,4 @@
+MATCH (s:Studente {username: 'marta'}), (a:AnnoCorso {anno: '1anno'}) CREATE (s)-[:FREQUENTA]->(a);
+MATCH (s:Studente {username: 'marta'}), (a:AnnoCorso {anno: '2anno'}) CREATE (s)-[:FREQUENTA]->(a);
+MATCH (s:Studente {username: 'marta'}), (a:AnnoCorso {anno: '3anno'}) CREATE (s)-[:FREQUENTA]->(a);
+

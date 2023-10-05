@@ -1,0 +1,26 @@
+CREATE (:Studente {
+     nome: 'Roberto',
+     cognome: 'Travagliante',
+     username: 'rtravaglia',
+     password: 'pippo',
+     anno: '3anno'
+})
+
+
+CREATE (:Studente {
+     nome: 'Pippo',
+     cognome: 'Pluto',
+     username: 'pippo',
+     password: 'pluto',
+     anno: '2anno'
+})
+
+
+CREATE (:Studente {
+     nome: 'Marta',
+     cognome: 'Sileo',
+     username: 'marta',
+     password: 'password',
+     anno: '3anno'
+})
+

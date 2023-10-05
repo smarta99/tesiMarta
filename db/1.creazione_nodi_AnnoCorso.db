@@ -1,0 +1,12 @@
+
+CREATE (:AnnoCorso {
+     anno: '1anno'
+})
+
+CREATE (:AnnoCorso {
+     anno: '2anno'
+})
+
+CREATE (:AnnoCorso {
+     anno: '3anno'
+})

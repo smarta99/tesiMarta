@@ -1,0 +1,145 @@
+// corsi del 1° anno
+CREATE (:Corso {
+     nome: 'Analisi Matematica',
+     ore: '104',
+     cfu: '12'
+});
+MATCH (a:AnnoCorso {anno: '1anno'}), (c:Corso {nome: 'Analisi Matematica'}) CREATE (a)-[:PREVEDE_CORSO]->(c);
+
+CREATE (:Corso {
+     nome: 'Architettura dei Calcolatori Elettronici',
+     ore: '48',
+     cfu: '6'
+});
+MATCH (a:AnnoCorso {anno: '1anno'}), (c:Corso {nome: 'Architettura dei Calcolatori Elettronici'}) CREATE (a)-[:PREVEDE_CORSO]->(c);
+
+CREATE (:Corso {
+     nome: 'Fisica',
+     ore: '96',
+     cfu: '12'
+});
+MATCH (a:AnnoCorso {anno: '1anno'}), (c:Corso {nome: 'Fisica'}) CREATE (a)-[:PREVEDE_CORSO]->(c);
+
+CREATE (:Corso {
+     nome: 'Geometria',
+     ore: '48',
+     cfu: '6'
+});
+MATCH (a:AnnoCorso {anno: '1anno'}), (c:Corso {nome: 'Geometria'}) CREATE (a)-[:PREVEDE_CORSO]->(c);
+
+CREATE (:Corso {
+     nome: 'Inglese',
+     ore: '24',
+     cfu: '3'
+});
+MATCH (a:AnnoCorso {anno: '1anno'}), (c:Corso {nome: 'Inglese'}) CREATE (a)-[:PREVEDE_CORSO]->(c);
+
+CREATE (:Corso {
+     nome: 'Programmazione Procedurale',
+     ore: '126',
+     cfu: '15'
+});
+MATCH (a:AnnoCorso {anno: '1anno'}), (c:Corso {nome: 'Programmazione Procedurale'}) CREATE (a)-[:PREVEDE_CORSO]->(c);
+
+
+// corsi del 2° anno
+CREATE (:Corso {
+     nome: 'Algoritmi e Strutture Dati',
+     ore: '48',
+     cfu: '6'
+});
+MATCH (a:AnnoCorso {anno: '2anno'}), (c:Corso {nome: 'Algoritmi e Strutture Dati'}) CREATE (a)-[:PREVEDE_CORSO]->(c);
+
+CREATE (:Corso {
+     nome: 'Calcolo Scientifico',
+     ore: '54',
+     cfu: '6'
+});
+MATCH (a:AnnoCorso {anno: '2anno'}), (c:Corso {nome: 'Calcolo Scientifico'}) CREATE (a)-[:PREVEDE_CORSO]->(c);
+
+CREATE (:Corso {
+     nome: 'Complementi di Calcolo',
+     ore: '48',
+     cfu: '6'
+});
+MATCH (a:AnnoCorso {anno: '2anno'}), (c:Corso {nome: 'Complementi di Calcolo'}) CREATE (a)-[:PREVEDE_CORSO]->(c);
+
+CREATE (:Corso {
+     nome: 'Elettrotecnica',
+     ore: '78',
+     cfu: '9'
+});
+MATCH (a:AnnoCorso {anno: '2anno'}), (c:Corso {nome: 'Elettrotecnica'}) CREATE (a)-[:PREVEDE_CORSO]->(c);
+
+CREATE (:Corso {
+     nome: 'Programmazione a Oggetti I',
+     ore: '104',
+     cfu: '12'
+});
+MATCH (a:AnnoCorso {anno: '2anno'}), (c:Corso {nome: 'Programmazione a Oggetti I'}) CREATE (a)-[:PREVEDE_CORSO]->(c);
+
+CREATE (:Corso {
+     nome: 'Sistemi Operativi',
+     ore: '48',
+     cfu: '6'
+});
+MATCH (a:AnnoCorso {anno: '2anno'}), (c:Corso {nome: 'Sistemi Operativi'}) CREATE (a)-[:PREVEDE_CORSO]->(c);
+
+
+// corsi del 3° anno
+CREATE (:Corso {
+     nome: 'Basi di Dati',
+     ore: '72',
+     cfu: '9'
+});
+MATCH (a:AnnoCorso {anno: '3anno'}), (c:Corso {nome: 'Basi di Dati'}) CREATE (a)-[:PREVEDE_CORSO]->(c);
+
+CREATE (:Corso {
+     nome: 'Campi Elettromagnetici',
+     ore: '78',
+     cfu: '9'
+});
+MATCH (a:AnnoCorso {anno: '3anno'}), (c:Corso {nome: 'Campi Elettromagnetici'}) CREATE (a)-[:PREVEDE_CORSO]->(c);
+
+CREATE (:Corso {
+     nome: 'Elementi di Ingegneria del Software',
+     ore: '48',
+     cfu: '6'
+});
+MATCH (a:AnnoCorso {anno: '3anno'}), (c:Corso {nome: 'Elementi di Ingegneria del Software'}) CREATE (a)-[:PREVEDE_CORSO]->(c);
+
+CREATE (:Corso {
+     nome: 'Elettronica',
+     ore: '78',
+     cfu: '9'
+});
+MATCH (a:AnnoCorso {anno: '3anno'}), (c:Corso {nome: 'Elettronica'}) CREATE (a)-[:PREVEDE_CORSO]->(c);
+
+CREATE (:Corso {
+     nome: 'Programmazione a Oggetti II',
+     ore: '102',
+     cfu: '12'
+});
+MATCH (a:AnnoCorso {anno: '3anno'}), (c:Corso {nome: 'Programmazione a Oggetti II'}) CREATE (a)-[:PREVEDE_CORSO]->(c);
+
+CREATE (:Corso {
+     nome: 'Segnali e Sistemi',
+     ore: '106',
+     cfu: '12'
+});
+MATCH (a:AnnoCorso {anno: '3anno'}), (c:Corso {nome: 'Segnali e Sistemi'}) CREATE (a)-[:PREVEDE_CORSO]->(c);
+
+CREATE (:Corso {
+     nome: 'Reti di Calcolatori',
+     ore: '48',
+     cfu: '6'
+});
+MATCH (a:AnnoCorso {anno: '3anno'}), (c:Corso {nome: 'Reti di Calcolatori'}) CREATE (a)-[:PREVEDE_CORSO]->(c);
+
+CREATE (:Corso {
+     nome: 'Fondamenti di Sistemi Dinamici',
+     ore: '48',
+     cfu: '6'
+});
+MATCH (a:AnnoCorso {anno: '3anno'}), (c:Corso {nome: 'Fondamenti di Sistemi Dinamici'}) CREATE (a)-[:PREVEDE_CORSO]->(c);
+

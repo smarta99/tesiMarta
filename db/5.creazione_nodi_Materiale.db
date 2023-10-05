@@ -1,0 +1,28 @@
+CREATE (:Materiale {
+     stato: 'presente',
+     descrizione: 'Appunti di reti',
+     link: 'materiale/reti_di_calcolatori/reti1.pdf'
+});
+MATCH (c:Corso {nome: 'Reti di Calcolatori'}), (m:Materiale {descrizione: 'Appunti di reti'}) CREATE (c)-[:HA_MATERIALE]->(m);
+
+CREATE (:Materiale {
+     stato: 'presente',
+     descrizione: 'Guida alle reti',
+     link: 'materiale/reti_di_calcolatori/reti2.pdf'
+});
+MATCH (c:Corso {nome: 'Reti di Calcolatori'}), (m:Materiale {descrizione: 'Guida alle reti'}) CREATE (c)-[:HA_MATERIALE]->(m);
+
+CREATE (:Materiale {
+     stato: 'presente',
+     descrizione: 'Le reti di computer',
+     link: 'materiale/reti_di_calcolatori/reti3.pdf'
+});
+MATCH (c:Corso {nome: 'Reti di Calcolatori'}), (m:Materiale {descrizione: 'Le reti di computer'}) CREATE (c)-[:HA_MATERIALE]->(m);
+
+CREATE (:Materiale {
+     stato: 'presente',
+     descrizione: 'Fondamenti di Basi di Dati',
+     link: 'materiale/basi_di_dati/basidati1.pdf'
+});
+MATCH (c:Corso {nome: 'Basi di Dati'}), (m:Materiale {descrizione: 'Fondamenti di Basi di Dati'}) CREATE (c)-[:HA_MATERIALE]->(m);
+

@@ -1,0 +1,49 @@
+CREATE (:Docente {
+     nome: 'Santomauro',
+     ricevimento: 'https://msantomauro.youcanbook.me'
+});
+MATCH (c:Corso {nome: 'Reti di Calcolatori'}), (d:Docente {nome: 'Santomauro'}) CREATE (c)-[:HA_DOCENTE]->(d);
+
+CREATE (:Docente {
+     nome: 'Fiumara',
+     ricevimento: 'Da concordare'
+});
+MATCH (c:Corso {nome: 'Campi Elettromagnetici'}), (d:Docente {nome: 'Fiumara'}) CREATE (c)-[:HA_DOCENTE]->(d);
+
+CREATE (:Docente {
+     nome: 'Iula',
+     ricevimento: 'Da concordare'
+});
+MATCH (c:Corso {nome: 'Elettronica'}), (d:Docente {nome: 'Iula'}) CREATE (c)-[:HA_DOCENTE]->(d);
+
+CREATE (:Docente {
+     nome: 'Tesauro',
+     ricevimento: 'Da concordare'
+});
+MATCH (c:Corso {nome: 'Segnali e Sistemi'}), (d:Docente {nome: 'Tesauro'}) CREATE (c)-[:HA_DOCENTE]->(d);
+
+CREATE (:Docente {
+     nome: 'Capece',
+     ricevimento: 'Martedì dalle 15.00 alle 18.00'
+});
+MATCH (c:Corso {nome: 'Elementi di Ingegneria del Software'}), (d:Docente {nome: 'Capece'}) CREATE (c)-[:HA_DOCENTE]->(d);
+
+CREATE (:Docente {
+     nome: 'Sartiani',
+     ricevimento: 'Da concordare'
+});
+MATCH (c:Corso {nome: 'Basi di Dati'}), (d:Docente {nome: 'Sartiani'}) CREATE (c)-[:HA_DOCENTE]->(d);
+
+CREATE (:Docente {
+     nome: 'Santoro',
+     ricevimento: 'Da concordare'
+});
+MATCH (c:Corso {nome: 'Programmazione a Oggetti II'}), (d:Docente {nome: 'Santoro'}) CREATE (c)-[:HA_DOCENTE]->(d);
+
+CREATE (:Docente {
+     nome: 'Caccavale',
+     ricevimento: 'Mercoledì dalle 10.30 alle 12:30'
+});
+MATCH (c:Corso {nome: 'Fondamenti di Sistemi Dinamici'}), (d:Docente {nome: 'Caccavale'}) CREATE (c)-[:HA_DOCENTE]->(d);
+
+
